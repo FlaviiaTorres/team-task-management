@@ -22,7 +22,7 @@ public class taskModel {
 	private Long id;
 	
 	@Column(length = 50)
-    private String title;
+    private String tittle;
     private String description;
     private String priority;
 
@@ -36,11 +36,11 @@ public class taskModel {
     private LocalDateTime createdAt;
     
     
-    private void setTitle (String title) throws Exception{
-    	if (title.length() > 50) {
+    private void setTittle (String tittle) throws Exception{
+    	if (tittle.length() > 50) {
 			throw new Exception("O campo title deve conter no máximo 50 caracteres");
 		}
-    	this.title = title;
+    	this.tittle = tittle;
     }
 	
 
